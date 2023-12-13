@@ -6,10 +6,18 @@
 //
 
 import UIKit
+import FlowsPackage
+import DependenciesPackage
 
 class InitialViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .red
+    // MARK: - UIElements Actions
+    @IBAction func showFlowsPackageContent(_ sender: UIButton) {
+        let controller = FPController()
+        self.show(controller, sender: nil)
+    }
+    
+    @IBAction func showDependenciesPackageContent(_ sender: UIButton) {
+        let controller = DPController()
+        show(controller, sender: nil)
     }
 }
