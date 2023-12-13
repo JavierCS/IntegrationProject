@@ -15,8 +15,6 @@
 		7F1EDFE62B2978AA00477A50 /* IntegrationProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1EDFE52B2978AA00477A50 /* IntegrationProjectUITestsLaunchTests.swift */; };
 		7F1EDFF62B29793800477A50 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1EDFF42B29793800477A50 /* InitialViewController.swift */; };
 		7F1EDFF72B29793800477A50 /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1EDFF52B29793800477A50 /* InitialViewController.xib */; };
-		7F1EE0142B29931400477A50 /* DependenciesFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1EE0042B2991E100477A50 /* DependenciesFramework.framework */; };
-		7F1EE0152B29931400477A50 /* DependenciesFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1EE0042B2991E100477A50 /* DependenciesFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7F1EE01B2B29972B00477A50 /* FlowsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1EE01A2B29972B00477A50 /* FlowsFramework.framework */; };
 		7F1EE01C2B29972B00477A50 /* FlowsFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1EE01A2B29972B00477A50 /* FlowsFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -36,20 +34,6 @@
 			remoteGlobalIDString = 7F1EDFBE2B2978A900477A50;
 			remoteInfo = IntegrationProject;
 		};
-		7F1EE0032B2991E100477A50 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7F1EDFFE2B2991E100477A50 /* DependenciesFramework.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7F1EDF5B2B2967C900477A50;
-			remoteInfo = DependenciesFramework;
-		};
-		7F1EE0052B2991E100477A50 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7F1EDFFE2B2991E100477A50 /* DependenciesFramework.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7F1EDF652B2967C900477A50;
-			remoteInfo = DependenciesFrameworkTests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,7 +43,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7F1EE0152B29931400477A50 /* DependenciesFramework.framework in Embed Frameworks */,
 				7F1EE01C2B29972B00477A50 /* FlowsFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -80,7 +63,6 @@
 		7F1EDFE52B2978AA00477A50 /* IntegrationProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7F1EDFF42B29793800477A50 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		7F1EDFF52B29793800477A50 /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
-		7F1EDFFE2B2991E100477A50 /* DependenciesFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DependenciesFramework.xcodeproj; path = ../../DependenciesFramework/DependenciesFramework.xcodeproj; sourceTree = "<group>"; };
 		7F1EE01A2B29972B00477A50 /* FlowsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FlowsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,7 +71,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F1EE0142B29931400477A50 /* DependenciesFramework.framework in Frameworks */,
 				7F1EE01B2B29972B00477A50 /* FlowsFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,7 +136,6 @@
 		7F1EDFE22B2978AA00477A50 /* IntegrationProjectUITests */ = {
 			isa = PBXGroup;
 			children = (
-				7F1EDFFE2B2991E100477A50 /* DependenciesFramework.xcodeproj */,
 				7F1EDFE32B2978AA00477A50 /* IntegrationProjectUITests.swift */,
 				7F1EDFE52B2978AA00477A50 /* IntegrationProjectUITestsLaunchTests.swift */,
 			);
@@ -177,15 +157,6 @@
 				7F1EDFF52B29793800477A50 /* InitialViewController.xib */,
 			);
 			path = Initial;
-			sourceTree = "<group>";
-		};
-		7F1EDFFF2B2991E100477A50 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7F1EE0042B2991E100477A50 /* DependenciesFramework.framework */,
-				7F1EE0062B2991E100477A50 /* DependenciesFrameworkTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		7F1EE0112B29931400477A50 /* Frameworks */ = {
@@ -287,12 +258,6 @@
 			mainGroup = 7F1EDFB62B2978A900477A50;
 			productRefGroup = 7F1EDFC02B2978A900477A50 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 7F1EDFFF2B2991E100477A50 /* Products */;
-					ProjectRef = 7F1EDFFE2B2991E100477A50 /* DependenciesFramework.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				7F1EDFBE2B2978A900477A50 /* IntegrationProject */,
@@ -301,23 +266,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		7F1EE0042B2991E100477A50 /* DependenciesFramework.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = DependenciesFramework.framework;
-			remoteRef = 7F1EE0032B2991E100477A50 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7F1EE0062B2991E100477A50 /* DependenciesFrameworkTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = DependenciesFrameworkTests.xctest;
-			remoteRef = 7F1EE0052B2991E100477A50 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7F1EDFBD2B2978A900477A50 /* Resources */ = {
