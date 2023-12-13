@@ -15,6 +15,8 @@
 		7F1EDFE62B2978AA00477A50 /* IntegrationProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1EDFE52B2978AA00477A50 /* IntegrationProjectUITestsLaunchTests.swift */; };
 		7F1EDFF62B29793800477A50 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1EDFF42B29793800477A50 /* InitialViewController.swift */; };
 		7F1EDFF72B29793800477A50 /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1EDFF52B29793800477A50 /* InitialViewController.xib */; };
+		7F1EE0142B29931400477A50 /* DependenciesFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1EE0042B2991E100477A50 /* DependenciesFramework.framework */; };
+		7F1EE0152B29931400477A50 /* DependenciesFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1EE0042B2991E100477A50 /* DependenciesFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +34,35 @@
 			remoteGlobalIDString = 7F1EDFBE2B2978A900477A50;
 			remoteInfo = IntegrationProject;
 		};
+		7F1EE0032B2991E100477A50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F1EDFFE2B2991E100477A50 /* DependenciesFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7F1EDF5B2B2967C900477A50;
+			remoteInfo = DependenciesFramework;
+		};
+		7F1EE0052B2991E100477A50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F1EDFFE2B2991E100477A50 /* DependenciesFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7F1EDF652B2967C900477A50;
+			remoteInfo = DependenciesFrameworkTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7F1EE0162B29931400477A50 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7F1EE0152B29931400477A50 /* DependenciesFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7F1EDFBF2B2978A900477A50 /* IntegrationProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntegrationProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +77,7 @@
 		7F1EDFE52B2978AA00477A50 /* IntegrationProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7F1EDFF42B29793800477A50 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		7F1EDFF52B29793800477A50 /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
+		7F1EDFFE2B2991E100477A50 /* DependenciesFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DependenciesFramework.xcodeproj; path = ../../DependenciesFramework/DependenciesFramework.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F1EE0142B29931400477A50 /* DependenciesFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +113,7 @@
 				7F1EDFD82B2978AA00477A50 /* IntegrationProjectTests */,
 				7F1EDFE22B2978AA00477A50 /* IntegrationProjectUITests */,
 				7F1EDFC02B2978A900477A50 /* Products */,
+				7F1EE0112B29931400477A50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +150,7 @@
 		7F1EDFE22B2978AA00477A50 /* IntegrationProjectUITests */ = {
 			isa = PBXGroup;
 			children = (
+				7F1EDFFE2B2991E100477A50 /* DependenciesFramework.xcodeproj */,
 				7F1EDFE32B2978AA00477A50 /* IntegrationProjectUITests.swift */,
 				7F1EDFE52B2978AA00477A50 /* IntegrationProjectUITestsLaunchTests.swift */,
 			);
@@ -140,6 +174,22 @@
 			path = Initial;
 			sourceTree = "<group>";
 		};
+		7F1EDFFF2B2991E100477A50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F1EE0042B2991E100477A50 /* DependenciesFramework.framework */,
+				7F1EE0062B2991E100477A50 /* DependenciesFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F1EE0112B29931400477A50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,6 +200,7 @@
 				7F1EDFBB2B2978A900477A50 /* Sources */,
 				7F1EDFBC2B2978A900477A50 /* Frameworks */,
 				7F1EDFBD2B2978A900477A50 /* Resources */,
+				7F1EE0162B29931400477A50 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,6 +281,12 @@
 			mainGroup = 7F1EDFB62B2978A900477A50;
 			productRefGroup = 7F1EDFC02B2978A900477A50 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7F1EDFFF2B2991E100477A50 /* Products */;
+					ProjectRef = 7F1EDFFE2B2991E100477A50 /* DependenciesFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7F1EDFBE2B2978A900477A50 /* IntegrationProject */,
@@ -238,6 +295,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7F1EE0042B2991E100477A50 /* DependenciesFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DependenciesFramework.framework;
+			remoteRef = 7F1EE0032B2991E100477A50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7F1EE0062B2991E100477A50 /* DependenciesFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DependenciesFrameworkTests.xctest;
+			remoteRef = 7F1EE0052B2991E100477A50 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7F1EDFBD2B2978A900477A50 /* Resources */ = {
