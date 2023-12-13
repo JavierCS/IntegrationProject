@@ -5,6 +5,9 @@
       location = "group:IntegrationProject/IntegrationProject.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:FlowsFramework/FlowsFramework.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:DependenciesFramework/DependenciesFramework.xcodeproj">
    </FileRef>
 </Workspace>

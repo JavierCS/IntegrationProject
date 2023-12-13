@@ -7,19 +7,17 @@
 
 import UIKit
 import DependenciesFramework
+import FlowsFramework
 
 class InitialViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .red
+    // MARK: - UIElements Actions
+    @IBAction func showFlowsFrameworkContent(_ sender: UIButton) {
+        let controller = FFController()
+        show(controller, sender: nil)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            let controller = DFController()
-            self.show(controller, sender: nil)
-        }
+    @IBAction func showDependenciesFrameworkContent(_ sender: UIButton) {
+        let controller = DFController()
+        show(controller, sender: nil)
     }
 }

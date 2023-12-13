@@ -1,3 +1,6 @@
 [submodule "DependenciesFramework"]
 	path = DependenciesFramework
 	url = https://github.com/JavierCS/DependenciesFramework
+[submodule "FlowsFramework"]
+	path = FlowsFramework
+	url = https://github.com/JavierCS/FlowsFramework

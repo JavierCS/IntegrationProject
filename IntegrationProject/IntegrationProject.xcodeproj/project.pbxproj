@@ -17,6 +17,8 @@
 		7F1EDFF72B29793800477A50 /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1EDFF52B29793800477A50 /* InitialViewController.xib */; };
 		7F1EE0142B29931400477A50 /* DependenciesFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1EE0042B2991E100477A50 /* DependenciesFramework.framework */; };
 		7F1EE0152B29931400477A50 /* DependenciesFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1EE0042B2991E100477A50 /* DependenciesFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7F1EE01B2B29972B00477A50 /* FlowsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1EE01A2B29972B00477A50 /* FlowsFramework.framework */; };
+		7F1EE01C2B29972B00477A50 /* FlowsFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1EE01A2B29972B00477A50 /* FlowsFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				7F1EE0152B29931400477A50 /* DependenciesFramework.framework in Embed Frameworks */,
+				7F1EE01C2B29972B00477A50 /* FlowsFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,6 +81,7 @@
 		7F1EDFF42B29793800477A50 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		7F1EDFF52B29793800477A50 /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
 		7F1EDFFE2B2991E100477A50 /* DependenciesFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DependenciesFramework.xcodeproj; path = ../../DependenciesFramework/DependenciesFramework.xcodeproj; sourceTree = "<group>"; };
+		7F1EE01A2B29972B00477A50 /* FlowsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FlowsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F1EE0142B29931400477A50 /* DependenciesFramework.framework in Frameworks */,
+				7F1EE01B2B29972B00477A50 /* FlowsFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +191,7 @@
 		7F1EE0112B29931400477A50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7F1EE01A2B29972B00477A50 /* FlowsFramework.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
