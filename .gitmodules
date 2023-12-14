@@ -1,0 +1,3 @@
+[submodule "FlowsFramework"]
+	path = FlowsFramework
+	url = https://github.com/JavierCS/FlowsFramework

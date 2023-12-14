@@ -15,6 +15,8 @@
 		7F1EDFE62B2978AA00477A50 /* IntegrationProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1EDFE52B2978AA00477A50 /* IntegrationProjectUITestsLaunchTests.swift */; };
 		7F1EDFF62B29793800477A50 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1EDFF42B29793800477A50 /* InitialViewController.swift */; };
 		7F1EDFF72B29793800477A50 /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1EDFF52B29793800477A50 /* InitialViewController.xib */; };
+		7F5593C62B2AAF4600C9AAEB /* FlowsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5593C52B2AAF4600C9AAEB /* FlowsFramework.framework */; };
+		7F5593C72B2AAF4600C9AAEB /* FlowsFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5593C52B2AAF4600C9AAEB /* FlowsFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7F5593C82B2AAF4600C9AAEB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7F5593C72B2AAF4600C9AAEB /* FlowsFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		7F1EDFBF2B2978A900477A50 /* IntegrationProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntegrationProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1EDFC22B2978A900477A50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +63,8 @@
 		7F1EDFE52B2978AA00477A50 /* IntegrationProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7F1EDFF42B29793800477A50 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		7F1EDFF52B29793800477A50 /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
+		7F5593BE2B2AAD3300C9AAEB /* FlowsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FlowsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F5593C52B2AAF4600C9AAEB /* FlowsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FlowsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F5593C62B2AAF4600C9AAEB /* FlowsFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +100,7 @@
 				7F1EDFD82B2978AA00477A50 /* IntegrationProjectTests */,
 				7F1EDFE22B2978AA00477A50 /* IntegrationProjectUITests */,
 				7F1EDFC02B2978A900477A50 /* Products */,
+				7F5593BD2B2AAD3300C9AAEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +160,15 @@
 			path = Initial;
 			sourceTree = "<group>";
 		};
+		7F5593BD2B2AAD3300C9AAEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F5593C52B2AAF4600C9AAEB /* FlowsFramework.framework */,
+				7F5593BE2B2AAD3300C9AAEB /* FlowsFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,12 +179,15 @@
 				7F1EDFBB2B2978A900477A50 /* Sources */,
 				7F1EDFBC2B2978A900477A50 /* Frameworks */,
 				7F1EDFBD2B2978A900477A50 /* Resources */,
+				7F5593C82B2AAF4600C9AAEB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = IntegrationProject;
+			packageProductDependencies = (
+			);
 			productName = IntegrationProject;
 			productReference = 7F1EDFBF2B2978A900477A50 /* IntegrationProject.app */;
 			productType = "com.apple.product-type.application";
@@ -228,6 +260,8 @@
 				Base,
 			);
 			mainGroup = 7F1EDFB62B2978A900477A50;
+			packageReferences = (
+			);
 			productRefGroup = 7F1EDFC02B2978A900477A50 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
